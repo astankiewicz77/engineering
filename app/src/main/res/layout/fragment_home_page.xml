@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.astankiewicz.sportfective.MainActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        style="@style/spinner_style"
+        android:prompt="@string/activities_prompt"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITY"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:id="@+id/spinnerText"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/chronometerRelative"
+        android:layout_below="@+id/spinnerText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:textSize="50sp"
+            android:format="%s"
+            android:textColor="#000000"
+            android:layout_weight="0.80"
+            android:layout_marginLeft="90dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometerImage"
+            android:src="@drawable/chronometer_image"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/chronometerText"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="51dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:id="@+id/chronometerText"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/chronometer"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/speedRelative"
+        android:layout_below="@+id/chronometerRelative"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceValue"
+            android:textColor="#000000"
+            android:text="0"
+            android:textSize="28sp"
+            android:layout_marginLeft="85dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISTANCE"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginLeft="64dp"
+            android:id="@+id/distanceText"
+            android:layout_below="@id/distanceValue"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceImage"
+            android:src="@drawable/distance_image"
+            android:layout_toRightOf="@id/distanceText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speedValues"
+            android:text="0"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPEED"
+            android:id="@+id/speedText"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="239dp"
+            android:layout_below="@id/speedValues"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speedImage"
+            android:src="@drawable/speed_image"
+            android:layout_toRightOf="@id/speedText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/buttonsRelative"
+        android:layout_below="@+id/speedRelative"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/buttonStart"
+            android:src="@drawable/button_start"
+            android:layout_marginLeft="10dp"/>
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="STOP"
+            android:id="@+id/buttonStop"
+            android:src="@drawable/button_stop"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="30dp"/>
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/buttonMaps"
+            android:src="@drawable/maps_button"
+            android:layout_below="@+id/buttonStop"
+            android:layout_marginLeft="290dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Sportfective</string>
+    <string name="fragments_stack_name">fragments_stack</string>
+
+    <!-- Navigation Drawer -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_training</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_history</item>
+        <item>@string/nav_item_routes</item>
+    </string-array>
+
+    <string name="nav_item_training">Training</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_history">History</string>
+    <string name="nav_item_routes">Routes</string>
+
+    <string name="title_training">Training</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_history">History</string>
+    <string name="title_routes">Routes</string>
+
+    <string name="drawer_open">open_drawer</string>
+    <string name="drawer_close">close_drawer</string>
+
+    <!-- Spinner -->
+    <string name="activities_prompt">Choose an activity...</string>
+
+    <!-- Overflow Menu -->
+    <string name="actionbar_home_title">Home</string>
+    <string name="action_about">About</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_music">Music</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

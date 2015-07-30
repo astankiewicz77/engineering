@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.astankiewicz.sportfective.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoo"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="63dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edit_email"
+            android:hint="E-mail"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edit_password"
+            android:hint="Password"
+            android:layout_below="@+id/edit_email"
+            android:layout_alignLeft="@+id/edit_email"
+            android:layout_alignStart="@+id/edit_email"
+            android:layout_marginTop="7dp"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj"
+            android:id="@+id/button_login"
+            android:layout_below="@+id/edit_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
+    </RelativeLayout>
+
+
+</FrameLayout>
